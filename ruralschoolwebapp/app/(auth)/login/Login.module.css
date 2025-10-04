@@ -1,0 +1,110 @@
+/* app/(auth)/login/Login.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 450px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.header h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+.header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.loginCard, .demoCard {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.loginCard h2 {
+    text-align: center;
+}
+.loginCard p {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #f9fafb;
+}
+.form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #22c55e;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.demoCard {
+    margin-top: 1.5rem;
+}
+.demoCard h3 {
+    margin-bottom: 0.25rem;
+}
+.demoCard p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.account:hover {
+    background-color: #f3f4f6;
+}
+.account div {
+    flex-grow: 1;
+}
+.account span {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+.account button {
+    padding: 0.25rem 0.75rem;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}

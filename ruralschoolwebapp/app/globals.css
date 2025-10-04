@@ -1,0 +1,41 @@
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary-green: #22c55e;
+  --color-primary-blue: #3b82f6;
+  --color-primary-orange: #f97316;
+  --color-text-dark: #1f2937;
+  --color-text-light: #6b7280;
+  --color-bg-card: #ffffff;
+  --color-bg-main: #f9fafb;
+  --color-border: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: var(--color-text-dark);
+  background: var(--color-bg-main);
+}
+
+/* Special gradient for the login page body */
+body.login-background {
+    background: linear-gradient(45deg, #2dd4bf, #3b82f6);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
