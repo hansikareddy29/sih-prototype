@@ -6,7 +6,7 @@ from pydantic import BaseModel
 import datetime
 app = FastAPI()
 
-origins = ["http://localhost:3000"]
+origins = ["https://sih-prototype-olive.vercel.app/login"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
