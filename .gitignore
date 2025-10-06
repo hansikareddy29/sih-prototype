@@ -9,8 +9,8 @@ Thumbs.db
 # =========================
 # Node.js / Next.js
 # =========================
-/node_modules
-/.next/
+ruralschoolwebapp/node_modules/
+ruralschoolwebapp/.next/
 /out/
 /build
 

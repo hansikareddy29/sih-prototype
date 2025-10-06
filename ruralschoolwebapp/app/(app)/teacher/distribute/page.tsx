@@ -1,4 +1,3 @@
-// app/(app)/teacher/distribute/page.tsx
 'use client';
 
 import { useState } from 'react'; // Import useState

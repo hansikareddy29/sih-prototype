@@ -104,3 +104,147 @@
     align-items: center;
     gap: 0.75rem;
 }
+
+/* ... (existing styles) ... */
+
+/* NEW STYLES for Tables and Modals */
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.dataTable th, .dataTable td {
+  padding: 1rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+.dataTable th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+.dataTable tbody tr:hover {
+  background-color: #f9fafb;
+}
+.editButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--color-border);
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.editButton:hover {
+  background-color: #f9fafb;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 24, 39, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modalContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+}
+.modalContent h3 {
+  margin-top: 0;
+}
+.modalInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+}
+.modalActions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.modalButtonPrimary {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--color-primary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modalButtonSecondary {
+  padding: 0.6rem 1.2rem;
+  background-color: #e5e7eb;
+  color: #1f2937;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* app/Dashboard.module.css */
+
+/* ... existing styles ... */
+
+.attendanceListSection {
+  background-color: #2a2a2a; /* Darker background for the section */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px; /* Space from quick actions */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.attendanceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: #e0e0e0; /* Light text for table content */
+}
+
+.attendanceTable th,
+.attendanceTable td {
+  border: 1px solid #444; /* Darker border for table cells */
+  padding: 12px;
+  text-align: left;
+}
+
+.attendanceTable th {
+  background-color: #3a3a3a; /* Slightly lighter background for headers */
+  font-weight: bold;
+  color: #fafafa;
+}
+
+.attendanceTable tbody tr:nth-child(even) {
+  background-color: #333; /* Alternate row shading */
+}
+
+.attendanceTable tbody tr:hover {
+  background-color: #4a4a4a; /* Hover effect for rows */
+}
+
+.hideButton {
+  background-color: #607d8b; /* Blue-grey color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.hideButton:hover {
+  background-color: #546e7a;
+}
